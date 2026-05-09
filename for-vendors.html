@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Get booked through Eventbook — For Vendors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<style>
+  /* Vendor-side runs on dark surface to differentiate audience */
+  body { background: var(--ink-dark); color: var(--cream); }
+  .nav { background: var(--ink-dark); border-bottom: 1px solid rgba(244, 236, 221, .08); }
+  .nav.is-scrolled { background: rgba(21, 17, 11, .9); border-bottom-color: rgba(244, 236, 221, .12); }
+  .nav .nav-links a { color: rgba(244, 236, 221, .8); }
+  .nav .nav-links a:hover, .nav .nav-links a.is-active { background: rgba(244, 236, 221, .08); color: var(--cream); }
+  .nav .signin { color: rgba(244, 236, 221, .8); }
+  .nav .signin:hover { background: rgba(244, 236, 221, .08); color: var(--cream); }
+  .logo { color: var(--cream); }
+  .v-section { padding: 96px 0; }
+  .v-eyebrow { font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--peach); }
+  .v-muted { color: rgba(244, 236, 221, .65); }
+  .v-card { background: var(--ink-dark-2); border: 1px solid rgba(244, 236, 221, .08); border-radius: 18px; padding: 32px; }
+  .v-card-cream { background: var(--cream-2); color: var(--ink); border: none; }
+  .v-input { background: rgba(244, 236, 221, .06); border: 1px solid rgba(244, 236, 221, .14); color: var(--cream); }
+  .v-faq summary { color: var(--cream); }
+  .v-faq summary::after { color: rgba(244, 236, 221, .5); }
+  .v-faq details { border-color: rgba(244, 236, 221, .12) !important; }
+  .v-faq details:first-child { border-top-color: rgba(244, 236, 221, .12) !important; }
+  .v-faq details > div { color: rgba(244, 236, 221, .65); }
+</style>
+</head>
+<body data-screen-label="05 For Vendors">
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark"></span>Eventbook</a>
+    <nav class="nav-links">
+      <a href="vendors.html">Vendors</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="for-vendors.html" class="is-active">For vendors</a>
+      <a href="#">Guides</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="signin" href="#">Vendor sign in</a>
+      <a class="btn btn-primary btn-sm" href="#">List your business</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section style="padding: 80px 0 64px; position: relative; overflow: hidden;">
+  <!-- Soft gradient blob behind hero -->
+  <div style="position: absolute; top: -120px; right: -80px; width: 520px; height: 520px; border-radius: 50%; background: radial-gradient(circle, rgba(232, 122, 63, .25), transparent 70%); filter: blur(40px);"></div>
+  <div class="container" style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 80px; align-items: center; position: relative;">
+    <div>
+      <span class="v-eyebrow">For vendors</span>
+      <h1 class="display-1" style="margin-top: 20px; font-size: 76px; max-width: 13ch; line-height: 1;">Get booked through Eventbook.</h1>
+      <p class="lead" style="margin-top: 24px; color: rgba(244, 236, 221, .72); max-width: 50ch;">
+        Eventbook is where event planners source and book vendors for weddings, birthdays, corporate events, and more. Listing is <strong style="color: var(--cream);">free during early access</strong>.
+      </p>
+      <div style="display: flex; gap: 12px; margin-top: 32px; flex-wrap: wrap;">
+        <a href="#" class="btn btn-primary btn-lg">List your business</a>
+        <a href="#how" class="btn" style="background: rgba(244, 236, 221, .08); color: var(--cream); border: 1px solid rgba(244, 236, 221, .14); padding: 16px 26px;">See how it works →</a>
+      </div>
+      <div class="stats-row" style="display: flex; gap: 32px; margin-top: 40px; padding-top: 28px; border-top: 1px solid rgba(244, 236, 221, .12);">
+        <div><div class="tabular" style="font-size: 28px; font-weight: 600;">42,000+</div><div class="v-muted" style="font-size: 12.5px; margin-top: 2px;">Active planners</div></div>
+        <div><div class="tabular" style="font-size: 28px; font-weight: 600;">35</div><div class="v-muted" style="font-size: 12.5px; margin-top: 2px;">Cities</div></div>
+        <div><div class="tabular" style="font-size: 28px; font-weight: 600;">~6 days</div><div class="v-muted" style="font-size: 12.5px; margin-top: 2px;">To first lead</div></div>
+      </div>
+    </div>
+
+    <!-- Vendor profile mockup -->
+    <div style="background: var(--cream-2); color: var(--ink); border-radius: 22px; overflow: hidden; box-shadow: 0 40px 80px -20px rgba(0,0,0,.5);">
+      <div style="position: relative; aspect-ratio: 16 / 9;">
+        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80&auto=format&fit=crop" alt="" style="width: 100%; height: 100%; object-fit: cover;" />
+        <span class="vcard-tag" style="position: absolute; top: 16px; left: 16px;">Photographer</span>
+      </div>
+      <div style="padding: 22px 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <strong style="font-size: 20px;">Sundial Studio</strong>
+          <span style="font-size: 14px;"><span class="stars">★</span> 4.92 <span class="muted">(86)</span></span>
+        </div>
+        <div class="muted" style="font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 4px;">Austin, TX</div>
+        <p class="muted" style="font-size: 14px; margin-top: 10px;">Quiet, light-led documentary photography for weddings and milestone celebrations.</p>
+        <div style="display: flex; gap: 8px; margin-top: 12px;">
+          <span class="pmb pmb-deposit">◐ Deposit + final · from $3,200</span>
+        </div>
+        <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border-soft); display: flex; gap: 8px;">
+          <button class="btn btn-primary" style="flex: 1; justify-content: center;">+ Add to my event plan</button>
+          <button class="btn btn-outline">♡</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY LIST ============ -->
+<section class="v-section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="v-eyebrow">Why list</span>
+        <h2 class="h2" style="margin-top: 14px; max-width: 22ch;">Reach planners ready to book — across every event type.</h2>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+      <div class="v-card">
+        <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(232, 122, 63, .15); color: var(--peach); display: flex; align-items: center; justify-content: center; font-size: 22px;">◐</div>
+        <h3 class="h3" style="margin-top: 24px;">Reach planners across event types</h3>
+        <p class="v-muted" style="margin-top: 12px; line-height: 1.6;">Weddings, birthdays, corporate offsites, milestones — Eventbook serves them all. One listing, every kind of event.</p>
+      </div>
+      <div class="v-card">
+        <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(232, 122, 63, .15); color: var(--peach); display: flex; align-items: center; justify-content: center; font-size: 22px;">↻</div>
+        <h3 class="h3" style="margin-top: 24px;">Stop chasing leads</h3>
+        <p class="v-muted" style="margin-top: 12px; line-height: 1.6;">Planners come pre-qualified — they've already shortlisted you, set a budget, and picked a date range before they message.</p>
+      </div>
+      <div class="v-card">
+        <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(232, 122, 63, .15); color: var(--peach); display: flex; align-items: center; justify-content: center; font-size: 22px;">◇</div>
+        <h3 class="h3" style="margin-top: 24px;">Own your bookings end to end</h3>
+        <p class="v-muted" style="margin-top: 12px; line-height: 1.6;">Quotes, contracts, deposits, milestone payments — all in one place. You set your terms, your pricing model, your availability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="v-section" id="how" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="v-eyebrow">How it works</span>
+        <h2 class="h2" style="margin-top: 14px;">Live in 20 minutes. First lead in about a week.</h2>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+      <div class="v-card" style="position: relative;">
+        <div style="font-size: 14px; font-weight: 500; color: var(--peach);">01</div>
+        <h3 class="h3" style="margin-top: 12px;">Build your profile</h3>
+        <p class="v-muted" style="margin-top: 12px; line-height: 1.6;">Upload photos, add packages, write your story. Verify your business — usually 24 hours.</p>
+        <div style="margin-top: 24px; height: 140px; background: rgba(244, 236, 221, .04); border: 1px dashed rgba(244, 236, 221, .15); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 12.5px; color: rgba(244, 236, 221, .4);">Profile editor</div>
+      </div>
+      <div class="v-card" style="position: relative;">
+        <div style="font-size: 14px; font-weight: 500; color: var(--peach);">02</div>
+        <h3 class="h3" style="margin-top: 12px;">Set availability &amp; pricing</h3>
+        <p class="v-muted" style="margin-top: 12px; line-height: 1.6;">Calendar, packages, and the pricing model that fits your business — upfront, deposit, installments, or quote.</p>
+        <div style="margin-top: 24px; padding: 16px; background: rgba(244, 236, 221, .04); border-radius: 12px;">
+          <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+            <span class="pmb pmb-deposit">◐ Deposit + final</span>
+            <span class="pmb pmb-quote">◇ Custom quote</span>
+          </div>
+          <div style="margin-top: 14px; display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px;">
+            <div style="aspect-ratio: 1; border-radius: 4px; background: rgba(244, 236, 221, .1);"></div>
+            <div style="aspect-ratio: 1; border-radius: 4px; background: rgba(244, 236, 221, .1);"></div>
+            <div style="aspect-ratio: 1; border-radius: 4px; background: var(--peach); opacity: .85;"></div>
+            <div style="aspect-ratio: 1; border-radius: 4px; background: rgba(244, 236, 221, .1);"></div>
+            <div style="aspect-ratio: 1; border-radius: 4px; background: var(--peach); opacity: .85;"></div>
+            <div style="aspect-ratio: 1; border-radius: 4px; background: rgba(244, 236, 221, .1);"></div>
+            <div style="aspect-ratio: 1; border-radius: 4px; background: var(--peach); opacity: .85;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="v-card" style="position: relative;">
+        <div style="font-size: 14px; font-weight: 500; color: var(--peach);">03</div>
+        <h3 class="h3" style="margin-top: 12px;">Receive bookings</h3>
+        <p class="v-muted" style="margin-top: 12px; line-height: 1.6;">Planners shortlist you, request quotes, and book. You handle payments your way. We track everything.</p>
+        <div style="margin-top: 24px; padding: 14px; background: rgba(244, 236, 221, .04); border-radius: 12px; font-size: 13px;">
+          <div style="display: flex; justify-content: space-between;"><span>Maya R. · wedding</span><span class="v-muted">2h ago</span></div>
+          <div class="v-muted" style="margin-top: 6px; font-size: 12.5px;">"Available Oct 19? Looking at full-day with engagement add-on."</div>
+          <button style="margin-top: 12px; padding: 6px 12px; background: var(--peach); color: #fff; border: none; border-radius: 999px; font-size: 12px; font-weight: 500;">Reply with quote</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VENDOR PROFILE PREVIEW WITH CALLOUTS ============ -->
+<section class="v-section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="v-eyebrow">What planners see</span>
+        <h2 class="h2" style="margin-top: 14px;">Your profile, the way planners experience it.</h2>
+      </div>
+    </div>
+
+    <div style="position: relative; background: var(--cream); color: var(--ink); border-radius: 22px; padding: 48px; overflow: hidden;">
+      <div style="display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: start; position: relative;">
+        <div>
+          <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+            <span class="chip">Photographer</span>
+            <span class="chip chip-neutral">Weddings</span>
+            <span class="chip chip-neutral">Birthdays</span>
+          </div>
+          <h3 class="h2" style="font-size: 30px; color: var(--ink);">Sundial Studio</h3>
+          <div class="muted" style="margin-top: 6px; font-size: 14px;"><span class="stars">★</span> 4.92 · 86 reviews · Austin, TX · Responds in ~2 hours</div>
+          <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 8px; margin-top: 20px; aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=80&auto=format&fit=crop" alt="" style="width: 100%; height: 100%; object-fit: cover;" />
+            <div style="display: grid; grid-template-rows: 1fr 1fr; gap: 8px;">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&q=80&auto=format&fit=crop" alt="" style="width: 100%; height: 100%; object-fit: cover;" />
+              <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=400&q=80&auto=format&fit=crop" alt="" style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+          </div>
+        </div>
+        <div style="background: var(--paper); border: 1px solid var(--border); border-radius: 16px; padding: 22px;">
+          <span class="pmb pmb-deposit">◐ Deposit + final</span>
+          <div style="margin-top: 14px; font-size: 24px; font-weight: 600;">From $3,200</div>
+          <div class="muted" style="margin-top: 4px; font-size: 13px;">50% deposit, balance 14 days before.</div>
+          <button class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 18px;">+ Add to event plan</button>
+          <button class="btn btn-outline" style="width: 100%; justify-content: center; margin-top: 8px;">Message vendor</button>
+        </div>
+      </div>
+
+      <!-- Callouts -->
+      <div style="position: absolute; top: 64px; left: -8px; transform: translateX(-100%); display: flex; align-items: center; gap: 10px;">
+        <span style="background: var(--peach); color: #fff; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 500; white-space: nowrap;">1 · Categories &amp; event types</span>
+        <span style="width: 32px; height: 1px; background: var(--peach);"></span>
+      </div>
+      <div style="position: absolute; bottom: 220px; left: -8px; transform: translateX(-100%); display: flex; align-items: center; gap: 10px;">
+        <span style="background: var(--peach); color: #fff; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 500; white-space: nowrap;">2 · Portfolio gallery</span>
+        <span style="width: 32px; height: 1px; background: var(--peach);"></span>
+      </div>
+      <div style="position: absolute; top: 100px; right: -8px; transform: translateX(100%); display: flex; align-items: center; gap: 10px;">
+        <span style="width: 32px; height: 1px; background: var(--peach);"></span>
+        <span style="background: var(--peach); color: #fff; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 500; white-space: nowrap;">3 · Pricing model</span>
+      </div>
+      <div style="position: absolute; bottom: 100px; right: -8px; transform: translateX(100%); display: flex; align-items: center; gap: 10px;">
+        <span style="width: 32px; height: 1px; background: var(--peach);"></span>
+        <span style="background: var(--peach); color: #fff; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 500; white-space: nowrap;">4 · Booking CTA</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATEGORIES ACCEPTED ============ -->
+<section class="v-section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="v-eyebrow">Now accepting</span>
+        <h2 class="h2" style="margin-top: 14px;">11 categories across 35 cities.</h2>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;">
+      <div class="v-card" style="padding: 22px 24px; display: flex; align-items: center; gap: 12px;">
+        <span style="width: 36px; height: 36px; border-radius: 10px; background: rgba(232, 122, 63, .15); color: var(--peach); display: flex; align-items: center; justify-content: center;">⌂</span>
+        <span style="font-weight: 500;">Venues</span>
+      </div>
+      <div class="v-card" style="padding: 22px 24px; display: flex; align-items: center; gap: 12px;">
+        <span style="width: 36px; height: 36px; border-radius: 10px; background: rgba(232, 122, 63, .15); color: var(--peach); display: flex; align-items: center; justify-content: center;">◐</span>
+        <span style="font-weight: 500;">Photographers</span>
+      </div>
+      <div class="v-card" style="padding: 22px 24px; display: flex; align-items: center; gap: 12px;">
+        <span style="width: 36px; height: 36px; border-radius: 10px; background: rgba(232, 122, 63, .15); color: var(--peach); display: flex; align-items: center; justify-content: center;">▷</span>
+        <span style="font-weight: 500;">Videographers</span>
+      </div>
+      <div class="v-card" style="padding: 22px 24px; display: flex; align-items: center; gap: 12px;">
+        <span style="width: 36px; height: 36px; border-radius: 10px; background: rgba(232, 122, 63, .15); color: var(--peach); display: flex; align-items: center; justify-content: center;">◇</span>
+        <span style="font-weight: 500;">Caterers</span>
+      </div>
+      <div class="v-card" style="padding: 22px 24px; display: flex; align-items: center; gap: 12px;">
+        <span style="width: 36px; height: 36px; border-radius: 10px; background: rgba(232, 122, 63, .15); color: var(--peach); display: flex; align-items: center; justify-content: center;">♪</span>
+        <span style="font-weight: 500;">DJs</span>
+      </div>
+      <div class="v-card" style="padding: 22px 24px; display: flex; align-items: center; gap: 12px;">
+        <span style="width: 36px; height: 36px; border-radius: 10px; background: rgba(232, 122, 63, .15); color: var(--peach); display: flex; align-items: center; justify-content: center;">✿</span>
+        <span style="font-weight: 500;">Florists</span>
+      </div>
+      <div class="v-card" style="padding: 22px 24px; display: flex; align-items: center; gap: 12px;">
+        <span style="width: 36px; height: 36px; border-radius: 10px; background: rgba(232, 122, 63, .15); color: var(--peach); display: flex; align-items: center; justify-content: center;">◫</span>
+        <span style="font-weight: 500;">Decorators</span>
+      </div>
+      <div class="v-card" style="padding: 22px 24px; display: flex; align-items: center; gap: 12px;">
+        <span style="width: 36px; height: 36px; border-radius: 10px; background: rgba(232, 122, 63, .15); color: var(--peach); display: flex; align-items: center; justify-content: center;">✦</span>
+        <span style="font-weight: 500;">Makeup artists</span>
+      </div>
+      <div class="v-card" style="padding: 22px 24px; display: flex; align-items: center; gap: 12px;">
+        <span style="width: 36px; height: 36px; border-radius: 10px; background: rgba(232, 122, 63, .15); color: var(--peach); display: flex; align-items: center; justify-content: center;">→</span>
+        <span style="font-weight: 500;">Transportation</span>
+      </div>
+      <div class="v-card" style="padding: 22px 24px; display: flex; align-items: center; gap: 12px;">
+        <span style="width: 36px; height: 36px; border-radius: 10px; background: rgba(232, 122, 63, .15); color: var(--peach); display: flex; align-items: center; justify-content: center;">▬</span>
+        <span style="font-weight: 500;">Rentals</span>
+      </div>
+      <div class="v-card" style="padding: 22px 24px; display: flex; align-items: center; gap: 12px;">
+        <span style="width: 36px; height: 36px; border-radius: 10px; background: rgba(232, 122, 63, .15); color: var(--peach); display: flex; align-items: center; justify-content: center;">★</span>
+        <span style="font-weight: 500;">Entertainment</span>
+      </div>
+      <div class="v-card" style="padding: 22px 24px; display: flex; align-items: center; gap: 12px; background: rgba(232, 122, 63, .12); border-color: rgba(232, 122, 63, .3); color: var(--peach);">
+        <span style="font-weight: 500;">Don't see yours?</span>
+        <span style="margin-left: auto;">→</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING / ECONOMICS ============ -->
+<section class="v-section" style="padding-top: 0;">
+  <div class="container">
+    <div style="background: linear-gradient(135deg, rgba(232, 122, 63, .18), rgba(196, 171, 232, .12)); border: 1px solid rgba(232, 122, 63, .25); border-radius: 22px; padding: 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
+      <div>
+        <span class="v-eyebrow">Pricing</span>
+        <h2 class="h2" style="margin-top: 14px; max-width: 18ch;">Free during early access.</h2>
+        <p class="v-muted" style="margin-top: 16px; max-width: 50ch; font-size: 16px; line-height: 1.6;">
+          List your business at no cost while we ramp Eventbook in your city. No setup fees, no per-lead fees, no commission on your bookings during early access. We'll give you 90 days' notice before that ever changes.
+        </p>
+        <div style="display: flex; gap: 12px; margin-top: 28px;">
+          <a href="#" class="btn btn-primary btn-lg">Claim my free listing</a>
+        </div>
+      </div>
+      <div style="display: grid; gap: 12px;">
+        <div style="display: flex; gap: 14px; align-items: start;">
+          <span style="width: 24px; height: 24px; border-radius: 50%; background: var(--peach); color: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 12px;">✓</span>
+          <div><strong>Unlimited listings</strong><div class="v-muted" style="font-size: 14px; margin-top: 2px;">Every category, every city you serve.</div></div>
+        </div>
+        <div style="display: flex; gap: 14px; align-items: start;">
+          <span style="width: 24px; height: 24px; border-radius: 50%; background: var(--peach); color: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 12px;">✓</span>
+          <div><strong>No commission on bookings</strong><div class="v-muted" style="font-size: 14px; margin-top: 2px;">You keep 100% of what your clients pay.</div></div>
+        </div>
+        <div style="display: flex; gap: 14px; align-items: start;">
+          <span style="width: 24px; height: 24px; border-radius: 50%; background: var(--peach); color: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 12px;">✓</span>
+          <div><strong>Quote, contract, and payment tools</strong><div class="v-muted" style="font-size: 14px; margin-top: 2px;">Use them or don't — your choice.</div></div>
+        </div>
+        <div style="display: flex; gap: 14px; align-items: start;">
+          <span style="width: 24px; height: 24px; border-radius: 50%; background: var(--peach); color: #fff; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 12px;">✓</span>
+          <div><strong>Direct planner messaging</strong><div class="v-muted" style="font-size: 14px; margin-top: 2px;">No "lead-share" model. Inquiries come straight to you.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VENDOR FAQ ============ -->
+<section class="v-section" id="faq" style="padding-top: 0;">
+  <div class="container" style="max-width: 880px;">
+    <div class="section-head" style="justify-content: center; text-align: center;">
+      <div style="margin: 0 auto;">
+        <span class="v-eyebrow">Vendor FAQ</span>
+        <h2 class="h2" style="margin-top: 14px;">The questions vendors ask first.</h2>
+      </div>
+    </div>
+    <div class="faq v-faq">
+      <details open>
+        <summary>How do I get paid?</summary>
+        <div>Whichever way you and the planner agree. You can keep your existing payment flow (invoice, transfer, card) or use Eventbook's payment service for deposits, milestone payments, and pay-after-event arrangements. Funds go directly to you minus standard processing fees if you use ours.</div>
+      </details>
+      <details>
+        <summary>What happens when a planner cancels?</summary>
+        <div>Your cancellation policy is what governs the refund — it's recorded at booking time and shown clearly to the planner. Eventbook administers it on your behalf and resolves disputes with both sides looking at the same agreement.</div>
+      </details>
+      <details>
+        <summary>Can I list in multiple cities?</summary>
+        <div>Yes. Add as many cities as you actually serve, with travel terms set per city. We don't charge extra per city during early access.</div>
+      </details>
+      <details>
+        <summary>Am I required to use Eventbook for payment?</summary>
+        <div>No. The payment service is optional. Many vendors use Eventbook for discovery and quotes, and keep their existing payment processor. The planner sees the same booking either way.</div>
+      </details>
+      <details>
+        <summary>Which event types can I serve?</summary>
+        <div>Whichever you'd like — weddings, birthdays, corporate, parties, religious or cultural celebrations, fundraisers. Tag your listing with the event types you want to receive inquiries for.</div>
+      </details>
+      <details>
+        <summary>When does free pricing end?</summary>
+        <div>We'll give vendors 90 days' notice before introducing pricing in any city. No retroactive fees, no surprise commissions on bookings made under early access.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section style="padding: 96px 0; background: linear-gradient(180deg, transparent, rgba(232, 122, 63, .08));">
+  <div class="container" style="text-align: center;">
+    <h2 class="display-2" style="font-size: 56px; max-width: 18ch; margin: 0 auto;">Ready to get listed?</h2>
+    <p class="lead" style="margin: 20px auto 0; color: rgba(244, 236, 221, .7);">Set up your profile in 20 minutes. First inquiry usually within a week.</p>
+    <div style="display: inline-flex; gap: 12px; margin-top: 32px; flex-wrap: wrap; justify-content: center;">
+      <a href="#" class="btn btn-primary btn-lg">List your business</a>
+      <a href="#" class="btn" style="background: rgba(244, 236, 221, .08); color: var(--cream); border: 1px solid rgba(244, 236, 221, .14); padding: 16px 26px;">Talk to vendor team →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot" style="background: #0E0B07;">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo" style="color: var(--cream);"><span class="logo-mark"></span>Eventbook</a>
+        <p class="foot-blurb">The workspace and vendor directory for planners of any event.</p>
+      </div>
+      <div><h5>Product</h5><ul><li><a href="vendors.html">Vendors</a></li><li><a href="index.html#features">Features</a></li><li><a href="index.html#pricing">Pricing</a></li><li><a href="#">eveAI</a></li><li><a href="#">Guides</a></li></ul></div>
+      <div><h5>For vendors</h5><ul><li><a href="for-vendors.html">List your business</a></li><li><a href="for-vendors.html#how">How it works</a></li><li><a href="for-vendors.html#faq">Vendor FAQ</a></li></ul></div>
+      <div><h5>Company</h5><ul><li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <div class="copy">© 2026 Eventbook, Inc.</div>
+      <a href="for-vendors.html" class="foot-cta"><strong>Are you a vendor?</strong> List your business <span class="arr">→</span></a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

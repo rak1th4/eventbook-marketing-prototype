@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Find vendors for any event — Eventbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body data-screen-label="02 Vendors directory root">
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark"></span>Eventbook</a>
+    <nav class="nav-links">
+      <a href="vendors.html" class="is-active">Vendors</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="for-vendors.html">For vendors</a>
+      <a href="#">Guides</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="signin" href="#">Sign in</a>
+      <a class="btn btn-primary btn-sm" href="#">Start free</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section style="padding: 64px 0 56px; position: relative; overflow: hidden;">
+  <div class="container" style="text-align: center; position: relative;">
+    <span class="eyebrow">Vendor directory</span>
+    <h1 class="display-2" style="margin: 14px auto 0; max-width: 18ch;">Find vendors for any event.</h1>
+    <p class="lead" style="margin: 20px auto 0;">12,400 vetted vendors across 35 US and Canadian cities — photographers, venues, caterers, florists and more. Filter by event type, price, and availability.</p>
+
+    <!-- Search bar -->
+    <div style="max-width: 760px; margin: 36px auto 0; background: var(--paper); border: 1px solid var(--border); border-radius: 999px; padding: 6px; display: flex; align-items: center; gap: 4px; box-shadow: var(--shadow-md);">
+      <div style="flex: 1.2; padding: 10px 18px; border-right: 1px solid var(--border-soft); text-align: left;">
+        <div style="font-size: 11.5px; font-weight: 500; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase;">City</div>
+        <div style="font-size: 14.5px; font-weight: 500;">Austin, TX <span class="muted">▾</span></div>
+      </div>
+      <div style="flex: 1.2; padding: 10px 18px; border-right: 1px solid var(--border-soft); text-align: left;">
+        <div style="font-size: 11.5px; font-weight: 500; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase;">Category</div>
+        <div style="font-size: 14.5px; font-weight: 500;">All categories <span class="muted">▾</span></div>
+      </div>
+      <div style="flex: 1; padding: 10px 18px; text-align: left;">
+        <div style="font-size: 11.5px; font-weight: 500; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase;">Event type</div>
+        <div style="font-size: 14.5px; font-weight: 500;">Any event <span class="muted">▾</span></div>
+      </div>
+      <a href="directory.html" class="btn btn-primary" style="padding: 14px 22px;">Search</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATEGORY GRID (11 photo-backed tiles) ============ -->
+<section class="section" style="padding-top: 32px;">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2 class="h2">Browse by category</h2>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;">
+      <a href="directory.html" class="cat-tile" style="aspect-ratio: 4 / 3;">
+        <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600&q=80&auto=format&fit=crop" alt="" />
+        <div class="cat-tile-body">
+          <span class="cat-count">1,840 vendors</span>
+          <h3 class="h4" style="color: #fff;">Venues</h3>
+        </div>
+      </a>
+      <a href="directory.html" class="cat-tile" style="aspect-ratio: 4 / 3;">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80&auto=format&fit=crop" alt="" />
+        <div class="cat-tile-body">
+          <span class="cat-count">2,210 vendors</span>
+          <h3 class="h4" style="color: #fff;">Photographers</h3>
+        </div>
+      </a>
+      <a href="#" class="cat-tile" style="aspect-ratio: 4 / 3;">
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&q=80&auto=format&fit=crop" alt="" />
+        <div class="cat-tile-body">
+          <span class="cat-count">540 vendors</span>
+          <h3 class="h4" style="color: #fff;">Videographers</h3>
+        </div>
+      </a>
+      <a href="#" class="cat-tile" style="aspect-ratio: 4 / 3;">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80&auto=format&fit=crop" alt="" />
+        <div class="cat-tile-body">
+          <span class="cat-count">1,510 vendors</span>
+          <h3 class="h4" style="color: #fff;">Caterers</h3>
+        </div>
+      </a>
+      <a href="#" class="cat-tile" style="aspect-ratio: 4 / 3;">
+        <img src="https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=600&q=80&auto=format&fit=crop" alt="" />
+        <div class="cat-tile-body">
+          <span class="cat-count">720 vendors</span>
+          <h3 class="h4" style="color: #fff;">DJs</h3>
+        </div>
+      </a>
+      <a href="#" class="cat-tile" style="aspect-ratio: 4 / 3;">
+        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&q=80&auto=format&fit=crop" alt="" />
+        <div class="cat-tile-body">
+          <span class="cat-count">980 vendors</span>
+          <h3 class="h4" style="color: #fff;">Florists</h3>
+        </div>
+      </a>
+      <a href="#" class="cat-tile" style="aspect-ratio: 4 / 3;">
+        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=80&auto=format&fit=crop" alt="" />
+        <div class="cat-tile-body">
+          <span class="cat-count">630 vendors</span>
+          <h3 class="h4" style="color: #fff;">Decorators</h3>
+        </div>
+      </a>
+      <a href="#" class="cat-tile" style="aspect-ratio: 4 / 3;">
+        <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=600&q=80&auto=format&fit=crop" alt="" />
+        <div class="cat-tile-body">
+          <span class="cat-count">410 vendors</span>
+          <h3 class="h4" style="color: #fff;">Makeup artists</h3>
+        </div>
+      </a>
+      <a href="#" class="cat-tile" style="aspect-ratio: 4 / 3;">
+        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=80&auto=format&fit=crop" alt="" />
+        <div class="cat-tile-body">
+          <span class="cat-count">880 vendors</span>
+          <h3 class="h4" style="color: #fff;">Rentals</h3>
+        </div>
+      </a>
+      <a href="#" class="cat-tile" style="aspect-ratio: 4 / 3;">
+        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80&auto=format&fit=crop" alt="" />
+        <div class="cat-tile-body">
+          <span class="cat-count">340 vendors</span>
+          <h3 class="h4" style="color: #fff;">Transportation</h3>
+        </div>
+      </a>
+      <a href="#" class="cat-tile" style="aspect-ratio: 4 / 3;">
+        <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=600&q=80&auto=format&fit=crop" alt="" />
+        <div class="cat-tile-body">
+          <span class="cat-count">490 vendors</span>
+          <h3 class="h4" style="color: #fff;">Entertainment</h3>
+        </div>
+      </a>
+      <a href="directory.html" class="cat-tile" style="aspect-ratio: 4 / 3; background: var(--ink-dark); display: flex; align-items: center; justify-content: center; color: var(--cream); font-weight: 500;">
+        <div style="text-align: center;">
+          <div style="font-size: 14px;">See all</div>
+          <div style="font-size: 22px; margin-top: 6px;">→</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+.cat-tile {
+  position: relative; display: block; border-radius: var(--r-lg); overflow: hidden; background: var(--cream-2);
+}
+.cat-tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.cat-tile::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,.55) 100%); }
+.cat-tile:hover img { transform: scale(1.04); }
+.cat-tile-body { position: absolute; left: 18px; right: 18px; bottom: 16px; z-index: 1; color: #fff; }
+.cat-count { font-size: 11.5px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,.85); display: block; margin-bottom: 4px; }
+</style>
+
+<!-- ============ FEATURED VENDORS STRIP ============ -->
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Featured this week</span>
+        <h2 class="h2" style="margin-top: 12px;">Vendors planners are booking right now</h2>
+      </div>
+      <div class="right">
+        <a href="directory.html" class="btn btn-ghost">View all featured →</a>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px;">
+      <!-- Vendor card 1 -->
+      <a href="profile.html" class="vcard">
+        <div class="vcard-img">
+          <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=520&q=80&auto=format&fit=crop" alt="" />
+          <span class="vcard-tag">Photographer</span>
+          <div class="vcard-fav">♡</div>
+        </div>
+        <div class="vcard-body">
+          <div class="vcard-name">Sundial Studio<span class="rate"><span class="star">★</span>4.92<span class="reviews">(86)</span></span></div>
+          <div class="vcard-loc">Austin, TX</div>
+          <div class="vcard-desc">Quiet, light-led documentary photography for weddings and milestone celebrations.</div>
+          <div class="vcard-foot">
+            <span class="pmb pmb-deposit">◐ Deposit + final</span>
+            <div class="vcard-chips"><span class="chip">Weddings</span><span class="chip chip-neutral">Birthdays</span></div>
+          </div>
+        </div>
+      </a>
+      <!-- Vendor card 2 -->
+      <a href="#" class="vcard">
+        <div class="vcard-img">
+          <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=520&q=80&auto=format&fit=crop" alt="" />
+          <span class="vcard-tag">Florist</span>
+          <div class="vcard-fav">♡</div>
+        </div>
+        <div class="vcard-body">
+          <div class="vcard-name">Wildbloom & Co.<span class="rate"><span class="star">★</span>4.88<span class="reviews">(124)</span></span></div>
+          <div class="vcard-loc">Brooklyn, NY</div>
+          <div class="vcard-desc">Seasonal, market-driven floral design. Long arches, asymmetric arrangements, soft palettes.</div>
+          <div class="vcard-foot">
+            <span class="pmb pmb-quote">◇ Custom quote</span>
+            <div class="vcard-chips"><span class="chip">Weddings</span></div>
+          </div>
+        </div>
+      </a>
+      <!-- Vendor card 3 -->
+      <a href="#" class="vcard">
+        <div class="vcard-img">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=520&q=80&auto=format&fit=crop" alt="" />
+          <span class="vcard-tag">Caterer</span>
+          <div class="vcard-fav">♡</div>
+        </div>
+        <div class="vcard-body">
+          <div class="vcard-name">Salt + Smoke<span class="rate"><span class="star">★</span>4.81<span class="reviews">(212)</span></span></div>
+          <div class="vcard-loc">Austin, TX</div>
+          <div class="vcard-desc">Texan barbecue, wood-fired sides, family-style platters. Built for parties of 50–400.</div>
+          <div class="vcard-foot">
+            <span class="pmb pmb-upfront">→ Pay upfront</span>
+            <div class="vcard-chips"><span class="chip">Corporate</span><span class="chip chip-neutral">Parties</span></div>
+          </div>
+        </div>
+      </a>
+      <!-- Vendor card 4 -->
+      <a href="#" class="vcard">
+        <div class="vcard-img">
+          <img src="https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=520&q=80&auto=format&fit=crop" alt="" />
+          <span class="vcard-tag">DJ</span>
+          <div class="vcard-fav">♡</div>
+        </div>
+        <div class="vcard-body">
+          <div class="vcard-name">Ridge DJs<span class="rate"><span class="star">★</span>4.95<span class="reviews">(168)</span></span></div>
+          <div class="vcard-loc">Denver, CO</div>
+          <div class="vcard-desc">Open-format weddings and corporate parties. Live mixing, vinyl sets, and full lighting rigs.</div>
+          <div class="vcard-foot">
+            <span class="pmb pmb-after">↻ Pay after event</span>
+            <div class="vcard-chips"><span class="chip">Weddings</span></div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BROWSE BY CITY ============ -->
+<section class="section" style="background: var(--cream-2); padding: 88px 0;">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">35 cities, US + Canada</span>
+        <h2 class="h2" style="margin-top: 12px;">Browse by city</h2>
+      </div>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+      <a href="directory.html" class="city-chip">Austin, TX <span>1,210</span></a>
+      <a href="#" class="city-chip">New York, NY <span>2,840</span></a>
+      <a href="#" class="city-chip">Los Angeles, CA <span>2,610</span></a>
+      <a href="#" class="city-chip">Chicago, IL <span>1,820</span></a>
+      <a href="#" class="city-chip">San Francisco, CA <span>1,540</span></a>
+      <a href="#" class="city-chip">Seattle, WA <span>1,140</span></a>
+      <a href="#" class="city-chip">Boston, MA <span>980</span></a>
+      <a href="#" class="city-chip">Denver, CO <span>720</span></a>
+      <a href="#" class="city-chip">Portland, OR <span>620</span></a>
+      <a href="#" class="city-chip">Nashville, TN <span>880</span></a>
+      <a href="#" class="city-chip">Atlanta, GA <span>1,210</span></a>
+      <a href="#" class="city-chip">Miami, FL <span>1,420</span></a>
+      <a href="#" class="city-chip">Dallas, TX <span>1,180</span></a>
+      <a href="#" class="city-chip">Houston, TX <span>1,090</span></a>
+      <a href="#" class="city-chip">San Diego, CA <span>720</span></a>
+      <a href="#" class="city-chip">Phoenix, AZ <span>660</span></a>
+      <a href="#" class="city-chip">Philadelphia, PA <span>840</span></a>
+      <a href="#" class="city-chip">Washington, DC <span>1,030</span></a>
+      <a href="#" class="city-chip">Minneapolis, MN <span>540</span></a>
+      <a href="#" class="city-chip">Las Vegas, NV <span>1,310</span></a>
+      <a href="#" class="city-chip">Charlotte, NC <span>520</span></a>
+      <a href="#" class="city-chip">Salt Lake City, UT <span>410</span></a>
+      <a href="#" class="city-chip">San Antonio, TX <span>490</span></a>
+      <a href="#" class="city-chip">Toronto, ON <span>1,610</span></a>
+      <a href="#" class="city-chip">Vancouver, BC <span>820</span></a>
+      <a href="#" class="city-chip">Montréal, QC <span>1,040</span></a>
+      <a href="#" class="city-chip">Calgary, AB <span>440</span></a>
+      <a href="#" class="city-chip">Ottawa, ON <span>320</span></a>
+      <a href="#" class="city-chip">+ 7 more →</a>
+    </div>
+  </div>
+</section>
+
+<style>
+.city-chip {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 16px;
+  background: var(--paper);
+  border: 1px solid var(--border-soft);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  transition: border-color .15s ease, transform .15s ease;
+}
+.city-chip:hover { border-color: var(--ink); transform: translateY(-1px); }
+.city-chip span { color: var(--muted); font-weight: 400; font-size: 12.5px; }
+</style>
+
+<!-- ============ BROWSE BY EVENT TYPE ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2 class="h2">Browse by event type</h2>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;">
+      <a href="#" class="ev-card">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80&auto=format&fit=crop" alt="" />
+        <div class="ev-card-body">
+          <h4 class="h4">Weddings</h4>
+          <p class="muted">8,400 vendors</p>
+        </div>
+      </a>
+      <a href="#" class="ev-card">
+        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=600&q=80&auto=format&fit=crop" alt="" />
+        <div class="ev-card-body">
+          <h4 class="h4">Birthdays</h4>
+          <p class="muted">5,210 vendors</p>
+        </div>
+      </a>
+      <a href="#" class="ev-card">
+        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80&auto=format&fit=crop" alt="" />
+        <div class="ev-card-body">
+          <h4 class="h4">Corporate</h4>
+          <p class="muted">3,840 vendors</p>
+        </div>
+      </a>
+      <a href="#" class="ev-card">
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&q=80&auto=format&fit=crop" alt="" />
+        <div class="ev-card-body">
+          <h4 class="h4">Parties</h4>
+          <p class="muted">6,920 vendors</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+.ev-card { display: block; border-radius: var(--r-lg); overflow: hidden; background: var(--paper); border: 1px solid var(--border-soft); transition: transform .2s ease, border-color .2s ease; }
+.ev-card:hover { transform: translateY(-3px); border-color: var(--ink); }
+.ev-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.ev-card-body { padding: 18px 20px 22px; }
+.ev-card-body p { margin: 6px 0 0; font-size: 14px; }
+</style>
+
+<!-- ============ PLANNER CTA BAND ============ -->
+<section style="padding: 24px 0;">
+  <div class="container">
+    <div class="ai-bg" style="border-radius: 28px; padding: 48px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+      <div>
+        <h3 class="display-3" style="font-size: 32px; max-width: 24ch;">Planning an event? Manage everything from one workspace.</h3>
+        <p class="muted" style="margin: 10px 0 0;">Add vendors directly to your plan, track payments, and collaborate — alongside the directory you're browsing.</p>
+      </div>
+      <a href="index.html" class="btn btn-primary btn-lg">Start free</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section">
+  <div class="container" style="max-width: 880px;">
+    <div class="section-head" style="justify-content: center; text-align: center;">
+      <div style="margin: 0 auto;">
+        <span class="eyebrow">Directory FAQ</span>
+        <h2 class="h2" style="margin-top: 12px;">Common questions</h2>
+      </div>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>How are vendors vetted?</summary>
+        <div>Every vendor verifies their business identity, public reviews, and recent event history before going live. We re-verify annually and remove listings that fall below our response-time and customer-satisfaction thresholds.</div>
+      </details>
+      <details>
+        <summary>How does booking work?</summary>
+        <div>Browse, save vendors to a shortlist, and request quotes. Vendors respond directly inside Eventbook, where you can compare offers, sign contracts, and confirm. Anything you book is added to your event plan automatically.</div>
+      </details>
+      <details>
+        <summary>Who handles payment?</summary>
+        <div>You can pay vendors directly, or use Eventbook's optional payment service for deposits, milestone payments, and pay-after-event arrangements. Payment terms are always set by the vendor.</div>
+      </details>
+      <details>
+        <summary>What happens with cancellations?</summary>
+        <div>Each vendor sets their own cancellation policy, shown clearly on every profile. Eventbook records the policy at time of booking, so you and the vendor share a single source of truth if anything changes.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VENDOR BAND ============ -->
+<section class="vband">
+  <div class="container vband-inner">
+    <div>
+      <h3>Are you a vendor?</h3>
+      <p>List your business on Eventbook and reach planners booking weddings, birthdays, and corporate events across 35 cities.</p>
+    </div>
+    <a href="for-vendors.html" class="btn btn-on-dark">List your business →</a>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo" style="color: var(--cream);"><span class="logo-mark"></span>Eventbook</a>
+        <p class="foot-blurb">The workspace and vendor directory for planners of any event.</p>
+      </div>
+      <div><h5>Product</h5><ul><li><a href="vendors.html">Vendors</a></li><li><a href="index.html#features">Features</a></li><li><a href="index.html#pricing">Pricing</a></li><li><a href="#">eveAI</a></li><li><a href="#">Guides</a></li></ul></div>
+      <div><h5>For vendors</h5><ul><li><a href="for-vendors.html">List your business</a></li><li><a href="for-vendors.html#how">How it works</a></li><li><a href="for-vendors.html#faq">Vendor FAQ</a></li></ul></div>
+      <div><h5>Company</h5><ul><li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <div class="copy">© 2026 Eventbook, Inc.</div>
+      <a href="for-vendors.html" class="foot-cta"><strong>Are you a vendor?</strong> List your business <span class="arr">→</span></a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

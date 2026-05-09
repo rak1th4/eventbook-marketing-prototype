@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Photographers in Austin, TX — Eventbook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body data-screen-label="03 Category × City">
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark"></span>Eventbook</a>
+    <nav class="nav-links">
+      <a href="vendors.html" class="is-active">Vendors</a>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="for-vendors.html">For vendors</a>
+      <a href="#">Guides</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="signin" href="#">Sign in</a>
+      <a class="btn btn-primary btn-sm" href="#">Start free</a>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <nav class="crumbs">
+    <a href="vendors.html">Vendors</a>
+    <span class="sep">/</span>
+    <a href="vendors.html">Photographers</a>
+    <span class="sep">/</span>
+    <span class="here">Austin, TX</span>
+  </nav>
+</div>
+
+<!-- ============ HERO ============ -->
+<section style="padding: 24px 0 48px;">
+  <div class="container" style="display: grid; grid-template-columns: 1.6fr 1fr; gap: 64px; align-items: end;">
+    <div>
+      <h1 class="display-2" style="font-size: 56px; max-width: 16ch;">Photographers in Austin, TX</h1>
+      <p class="lead" style="margin-top: 18px; max-width: 60ch;">
+        148 photographers serving Austin and the wider Hill Country — from documentary wedding shooters around East Austin to corporate-event teams downtown. Average wedding package starts around $3,400 and books 6–9 months in advance.
+      </p>
+      <div class="stats-row" style="display: flex; gap: 32px; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border-soft);">
+        <div><div class="tabular" style="font-size: 22px; font-weight: 600;">148</div><div class="muted" style="font-size: 12.5px;">Vendors</div></div>
+        <div><div class="tabular" style="font-size: 22px; font-weight: 600;">4.86</div><div class="muted" style="font-size: 12.5px;">Avg. rating</div></div>
+        <div><div class="tabular" style="font-size: 22px; font-weight: 600;">$3.4k</div><div class="muted" style="font-size: 12.5px;">Median start price</div></div>
+        <div><div class="tabular" style="font-size: 22px; font-weight: 600;">~4 hrs</div><div class="muted" style="font-size: 12.5px;">Avg. response time</div></div>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 8px; aspect-ratio: 4 / 3; border-radius: 20px; overflow: hidden;">
+      <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=80&auto=format&fit=crop" alt="" style="width: 100%; height: 100%; object-fit: cover;" />
+      <div style="display: grid; grid-template-rows: 1fr 1fr; gap: 8px;">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&q=80&auto=format&fit=crop" alt="" style="width: 100%; height: 100%; object-fit: cover;" />
+        <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=400&q=80&auto=format&fit=crop" alt="" style="width: 100%; height: 100%; object-fit: cover;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIRECTORY (filter rail + grid) ============ -->
+<section style="padding: 24px 0 64px;">
+  <div class="container">
+    <!-- Top bar (shows when tweak set to "top") -->
+    <div class="dir-topbar">
+      <span class="pill is-on">All event types <span style="opacity: .7;">▾</span></span>
+      <span class="pill">Price: any <span style="opacity: .7;">▾</span></span>
+      <span class="pill">Payment <span style="opacity: .7;">▾</span></span>
+      <span class="pill">Availability <span style="opacity: .7;">▾</span></span>
+      <span class="pill">More filters <span style="opacity: .7;">▾</span></span>
+      <span style="margin-left: auto; font-size: 13.5px; color: var(--muted);">Sort: <strong style="color: var(--ink);">Recommended ▾</strong></span>
+    </div>
+
+    <div class="dir">
+      <!-- ===== Filter rail ===== -->
+      <aside class="dir-rail">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
+          <h4 style="margin: 0;">Filters</h4>
+          <a href="#" style="font-size: 12.5px; color: var(--muted);">Clear</a>
+        </div>
+
+        <div class="fgroup">
+          <h4>Event type</h4>
+          <label class="fgroup-row"><input type="checkbox" checked /> Weddings <span class="count">98</span></label>
+          <label class="fgroup-row"><input type="checkbox" /> Corporate <span class="count">42</span></label>
+          <label class="fgroup-row"><input type="checkbox" /> Birthdays <span class="count">61</span></label>
+          <label class="fgroup-row"><input type="checkbox" /> Parties <span class="count">54</span></label>
+          <label class="fgroup-row"><input type="checkbox" /> Other <span class="count">12</span></label>
+        </div>
+
+        <div class="fgroup">
+          <h4>Price range</h4>
+          <div class="fslider">
+            <input type="range" min="0" max="10000" value="6500" />
+            <div class="fslider-vals tabular"><span>$500</span><span>$6,500</span></div>
+          </div>
+          <label class="fgroup-row" style="margin-top: 6px;"><input type="checkbox" /> Include quote-based</label>
+        </div>
+
+        <div class="fgroup">
+          <h4>Payment model</h4>
+          <label class="fgroup-row"><input type="checkbox" checked /> Deposit + final <span class="count">86</span></label>
+          <label class="fgroup-row"><input type="checkbox" checked /> Pay upfront <span class="count">42</span></label>
+          <label class="fgroup-row"><input type="checkbox" /> Installments <span class="count">28</span></label>
+          <label class="fgroup-row"><input type="checkbox" /> Pay after event <span class="count">14</span></label>
+          <label class="fgroup-row"><input type="checkbox" /> Custom quote <span class="count">31</span></label>
+        </div>
+
+        <div class="fgroup">
+          <h4>Availability</h4>
+          <div style="background: var(--paper); border: 1px solid var(--border); border-radius: 10px; padding: 10px; font-size: 13px; color: var(--muted); display: flex; align-items: center; justify-content: space-between;">
+            <span>Pick a date</span>
+            <span style="color: var(--ink);">📅</span>
+          </div>
+          <label class="fgroup-row" style="margin-top: 8px;"><input type="checkbox" /> Weekends only</label>
+        </div>
+
+        <div class="fgroup" style="border-bottom: none;">
+          <h4>Sort by</h4>
+          <div style="background: var(--paper); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; font-size: 13.5px; display: flex; align-items: center; justify-content: space-between;">
+            <span>Recommended</span>
+            <span class="muted">▾</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ===== Vendor grid ===== -->
+      <div>
+        <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 22px;">
+          <div><strong>148 photographers</strong> <span class="muted">in Austin, TX · sorted by recommended</span></div>
+          <div style="display: flex; gap: 6px;">
+            <button class="btn btn-ghost btn-sm" aria-label="Grid view" style="padding: 6px 10px;">▦</button>
+            <button class="btn btn-ghost btn-sm" aria-label="List view" style="padding: 6px 10px; opacity: .5;">≡</button>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;">
+
+          <a href="profile.html" class="vcard">
+            <div class="vcard-img">
+              <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=520&q=80&auto=format&fit=crop" alt="" />
+              <span class="vcard-tag">Photographer</span>
+              <div class="vcard-fav">♡</div>
+            </div>
+            <div class="vcard-body">
+              <div class="vcard-name">Sundial Studio<span class="rate"><span class="star">★</span>4.92<span class="reviews">(86)</span></span></div>
+              <div class="vcard-loc">Austin, TX · East side</div>
+              <div class="vcard-desc">Quiet, light-led documentary photography for weddings and milestone celebrations.</div>
+              <div class="vcard-foot">
+                <span class="pmb pmb-deposit">◐ Deposit + final · from $3,200</span>
+                <div class="vcard-chips"><span class="chip">Weddings</span><span class="chip chip-neutral">+2</span></div>
+              </div>
+            </div>
+          </a>
+
+          <a href="profile.html" class="vcard">
+            <div class="vcard-img">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=520&q=80&auto=format&fit=crop" alt="" />
+              <span class="vcard-tag">Photographer</span>
+              <div class="vcard-fav">♡</div>
+            </div>
+            <div class="vcard-body">
+              <div class="vcard-name">Field &amp; Frame Co.<span class="rate"><span class="star">★</span>4.87<span class="reviews">(54)</span></span></div>
+              <div class="vcard-loc">Austin, TX · Downtown</div>
+              <div class="vcard-desc">Editorial, film-first weddings. Two-shooter teams with a same-week sneak-peek gallery.</div>
+              <div class="vcard-foot">
+                <span class="pmb pmb-deposit">◐ Deposit + final · from $2,850</span>
+                <div class="vcard-chips"><span class="chip">Weddings</span></div>
+              </div>
+            </div>
+          </a>
+
+          <a href="profile.html" class="vcard">
+            <div class="vcard-img">
+              <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=520&q=80&auto=format&fit=crop" alt="" />
+              <span class="vcard-tag">Photographer</span>
+              <div class="vcard-fav">♡</div>
+            </div>
+            <div class="vcard-body">
+              <div class="vcard-name">Hill Country Lens<span class="rate"><span class="star">★</span>4.95<span class="reviews">(102)</span></span></div>
+              <div class="vcard-loc">Austin, TX · Dripping Springs</div>
+              <div class="vcard-desc">Hill Country and ranch weddings. Drone, candid, and family portraits across the day.</div>
+              <div class="vcard-foot">
+                <span class="pmb pmb-quote">◇ Custom quote</span>
+                <div class="vcard-chips"><span class="chip">Weddings</span><span class="chip chip-neutral">+1</span></div>
+              </div>
+            </div>
+          </a>
+
+          <a href="profile.html" class="vcard">
+            <div class="vcard-img">
+              <img src="https://images.unsplash.com/photo-1467810563316-b5476525c0f9?w=520&q=80&auto=format&fit=crop" alt="" />
+              <span class="vcard-tag">Photographer</span>
+              <span style="position: absolute; top: 12px; left: 130px; background: var(--peach); color: #fff; font-size: 10.5px; font-weight: 600; padding: 4px 8px; border-radius: 999px; letter-spacing: 0.06em; text-transform: uppercase;">New</span>
+              <div class="vcard-fav">♡</div>
+            </div>
+            <div class="vcard-body">
+              <div class="vcard-name">Magnolia &amp; Light<span class="rate" style="color: var(--muted-2); font-style: italic;">No reviews yet</span></div>
+              <div class="vcard-loc">Austin, TX · South Lamar</div>
+              <div class="vcard-desc">Romantic, warm-toned wedding photography. Booking first season — early-rate pricing.</div>
+              <div class="vcard-foot">
+                <span class="pmb pmb-upfront">→ Pay upfront · from $2,400</span>
+                <div class="vcard-chips"><span class="chip">Weddings</span></div>
+              </div>
+            </div>
+          </a>
+
+          <a href="profile.html" class="vcard">
+            <div class="vcard-img">
+              <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=520&q=80&auto=format&fit=crop" alt="" />
+              <span class="vcard-tag">Photographer</span>
+              <div class="vcard-fav">♡</div>
+            </div>
+            <div class="vcard-body">
+              <div class="vcard-name">Bright Hours Studio<span class="rate"><span class="star">★</span>4.79<span class="reviews">(67)</span></span></div>
+              <div class="vcard-loc">Austin, TX · Mueller</div>
+              <div class="vcard-desc">Corporate events, conferences, and product launches. Same-day delivery on key shots.</div>
+              <div class="vcard-foot">
+                <span class="pmb pmb-installments">≡ Installments · from $4,100</span>
+                <div class="vcard-chips"><span class="chip">Corporate</span><span class="chip chip-neutral">+2</span></div>
+              </div>
+            </div>
+          </a>
+
+          <a href="profile.html" class="vcard">
+            <div class="vcard-img">
+              <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=520&q=80&auto=format&fit=crop" alt="" />
+              <span class="vcard-tag">Photographer</span>
+              <div class="vcard-fav">♡</div>
+            </div>
+            <div class="vcard-body">
+              <div class="vcard-name">Driftwood Photo<span class="rate"><span class="star">★</span>4.91<span class="reviews">(143)</span></span></div>
+              <div class="vcard-loc">Austin, TX · Westlake</div>
+              <div class="vcard-desc">High-volume weddings with two photographers and a video add-on. Ten years in Austin.</div>
+              <div class="vcard-foot">
+                <span class="pmb pmb-deposit">◐ Deposit + final · from $3,800</span>
+                <div class="vcard-chips"><span class="chip">Weddings</span><span class="chip chip-neutral">+1</span></div>
+              </div>
+            </div>
+          </a>
+
+          <a href="profile.html" class="vcard">
+            <div class="vcard-img">
+              <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=520&q=80&auto=format&fit=crop" alt="" />
+              <span class="vcard-tag">Photographer</span>
+              <div class="vcard-fav">♡</div>
+            </div>
+            <div class="vcard-body">
+              <div class="vcard-name">Atlas Visuals<span class="rate"><span class="star">★</span>4.84<span class="reviews">(45)</span></span></div>
+              <div class="vcard-loc">Austin, TX · Domain</div>
+              <div class="vcard-desc">Birthday parties, milestones, and family events. Friendly with kids and large guest lists.</div>
+              <div class="vcard-foot">
+                <span class="pmb pmb-after">↻ Pay after event · from $2,950</span>
+                <div class="vcard-chips"><span class="chip">Birthdays</span><span class="chip chip-neutral">+2</span></div>
+              </div>
+            </div>
+          </a>
+
+          <a href="profile.html" class="vcard">
+            <div class="vcard-img">
+              <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=520&q=80&auto=format&fit=crop" alt="" />
+              <span class="vcard-tag">Photographer</span>
+              <div class="vcard-fav">♡</div>
+            </div>
+            <div class="vcard-body">
+              <div class="vcard-name">Quietframe<span class="rate" style="color: var(--muted-2); font-style: italic;">Awaiting first review</span></div>
+              <div class="vcard-loc">Austin, TX · Travis Heights</div>
+              <div class="vcard-desc">Minimal, black-and-white documentary work. Small weddings and intimate ceremonies only.</div>
+              <div class="vcard-foot">
+                <span class="pmb pmb-quote">◇ Custom quote</span>
+                <div class="vcard-chips"><span class="chip">Weddings</span></div>
+              </div>
+            </div>
+          </a>
+
+          <a href="profile.html" class="vcard">
+            <div class="vcard-img">
+              <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=520&q=80&auto=format&fit=crop" alt="" />
+              <span class="vcard-tag">Photographer</span>
+              <div class="vcard-fav">♡</div>
+            </div>
+            <div class="vcard-body">
+              <div class="vcard-name">Pecan Street Photo<span class="rate"><span class="star">★</span>4.88<span class="reviews">(88)</span></span></div>
+              <div class="vcard-loc">Austin, TX · East 6th</div>
+              <div class="vcard-desc">Weddings and rehearsal dinners. Editorial, magazine-style albums included in every package.</div>
+              <div class="vcard-foot">
+                <span class="pmb pmb-deposit">◐ Deposit + final · from $3,400</span>
+                <div class="vcard-chips"><span class="chip">Weddings</span><span class="chip chip-neutral">+1</span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Inline planner CTA after row 3 -->
+        <div style="margin: 28px 0; background: var(--ai-bg, var(--cream-2)); border: 1px solid var(--border-soft); border-radius: 18px; padding: 28px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: linear-gradient(110deg, #FBE4D0 0%, #FBD0E2 60%, #E2D0F4 100%);">
+          <div>
+            <h3 class="h3" style="font-size: 22px; max-width: 36ch;">Planning an event in Austin? Eventbook keeps it all in one place.</h3>
+            <p class="muted" style="margin: 6px 0 0; font-size: 14px;">Shortlist these photographers, request quotes, and add the chosen one straight to your event plan.</p>
+          </div>
+          <a href="index.html" class="btn btn-primary">Start free</a>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;">
+          <a href="profile.html" class="vcard">
+            <div class="vcard-img">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=520&q=80&auto=format&fit=crop" alt="" />
+              <span class="vcard-tag">Photographer</span>
+              <div class="vcard-fav">♡</div>
+            </div>
+            <div class="vcard-body">
+              <div class="vcard-name">Lone Star Stills<span class="rate"><span class="star">★</span>4.72<span class="reviews">(23)</span></span></div>
+              <div class="vcard-loc">Austin, TX · Round Rock</div>
+              <div class="vcard-desc">Birthday and party photography. Quick turnaround, social-ready edits within 48 hours.</div>
+              <div class="vcard-foot">
+                <span class="pmb pmb-upfront">→ Pay upfront · from $1,950</span>
+                <div class="vcard-chips"><span class="chip">Birthdays</span><span class="chip chip-neutral">+1</span></div>
+              </div>
+            </div>
+          </a>
+
+          <a href="profile.html" class="vcard">
+            <div class="vcard-img">
+              <img src="https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=520&q=80&auto=format&fit=crop" alt="" />
+              <span class="vcard-tag">Photographer</span>
+              <div class="vcard-fav">♡</div>
+            </div>
+            <div class="vcard-body">
+              <div class="vcard-name">Junipher Photo Co.<span class="rate"><span class="star">★</span>4.93<span class="reviews">(61)</span></span></div>
+              <div class="vcard-loc">Austin, TX · Hyde Park</div>
+              <div class="vcard-desc">Full-day weddings with optional film add-on. Detail-led, slow-shutter style.</div>
+              <div class="vcard-foot">
+                <span class="pmb pmb-installments">≡ Installments · from $4,500</span>
+                <div class="vcard-chips"><span class="chip">Weddings</span></div>
+              </div>
+            </div>
+          </a>
+
+          <a href="profile.html" class="vcard">
+            <div class="vcard-img">
+              <img src="https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=520&q=80&auto=format&fit=crop" alt="" />
+              <span class="vcard-tag">Photographer</span>
+              <div class="vcard-fav">♡</div>
+            </div>
+            <div class="vcard-body">
+              <div class="vcard-name">Riverbed Photography<span class="rate" style="color: var(--muted-2); font-style: italic;">Awaiting first review</span></div>
+              <div class="vcard-loc">Austin, TX · Zilker</div>
+              <div class="vcard-desc">Corporate events, gala photography, and brand activations. Multi-camera coverage available.</div>
+              <div class="vcard-foot">
+                <span class="pmb pmb-quote">◇ Custom quote</span>
+                <div class="vcard-chips"><span class="chip">Corporate</span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Pagination -->
+        <div style="display: flex; justify-content: center; align-items: center; gap: 4px; margin-top: 48px;">
+          <a href="#" class="btn btn-ghost btn-sm" style="padding: 8px 12px;">←</a>
+          <a href="#" class="btn btn-sm" style="background: var(--ink); color: var(--cream); padding: 8px 14px;">1</a>
+          <a href="#" class="btn btn-ghost btn-sm" style="padding: 8px 14px;">2</a>
+          <a href="#" class="btn btn-ghost btn-sm" style="padding: 8px 14px;">3</a>
+          <a href="#" class="btn btn-ghost btn-sm" style="padding: 8px 14px;">4</a>
+          <span class="muted" style="padding: 0 8px;">…</span>
+          <a href="#" class="btn btn-ghost btn-sm" style="padding: 8px 14px;">12</a>
+          <a href="#" class="btn btn-ghost btn-sm" style="padding: 8px 12px;">→</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCAL CONTEXT BLOCK ============ -->
+<section style="background: var(--cream-2); padding: 80px 0; border-top: 1px solid var(--border-soft);">
+  <div class="container" style="display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px;">
+    <div>
+      <span class="eyebrow">About wedding photography in Austin</span>
+      <h2 class="h2" style="margin-top: 12px; font-size: 32px;">What to expect when booking in Austin</h2>
+    </div>
+    <div style="font-size: 16px; line-height: 1.7; color: var(--ink-2);">
+      <p style="margin: 0 0 16px;">Average wedding photography in Austin runs <strong>$2,800 to $5,200</strong> for an 8-hour day, with most established studios sitting in the $3,200–$4,000 range. Hill Country and ranch venues add a 10–20% travel and overtime premium during peak weekends.</p>
+      <p style="margin: 0 0 16px;">Peak season runs October through early November and again April through May. Most photographers in this list book <strong>6 to 9 months</strong> in advance for Saturdays and 3–4 months ahead for Friday or Sunday dates. Rehearsal dinner and engagement-shoot add-ons are common; same-day sneak peeks and second-shooter packages are typical at the higher end.</p>
+      <p style="margin: 0;">Popular venues nearby: <a href="#" style="text-decoration: underline; text-underline-offset: 3px;">Vista West Ranch</a>, <a href="#" style="text-decoration: underline; text-underline-offset: 3px;">Mercury Hall</a>, <a href="#" style="text-decoration: underline; text-underline-offset: 3px;">Prospect House</a>, <a href="#" style="text-decoration: underline; text-underline-offset: 3px;">Kindred Oaks</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEARBY CITIES ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2 class="h2" style="font-size: 30px;">Photographers in nearby cities</h2>
+      </div>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+      <a href="#" class="city-chip">Round Rock, TX <span>32</span></a>
+      <a href="#" class="city-chip">San Antonio, TX <span>96</span></a>
+      <a href="#" class="city-chip">Houston, TX <span>184</span></a>
+      <a href="#" class="city-chip">Dallas, TX <span>168</span></a>
+      <a href="#" class="city-chip">Fredericksburg, TX <span>22</span></a>
+      <a href="#" class="city-chip">Waco, TX <span>18</span></a>
+      <a href="#" class="city-chip">Marfa, TX <span>9</span></a>
+    </div>
+  </div>
+</section>
+
+<style>
+.city-chip {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 16px;
+  background: var(--paper); border: 1px solid var(--border-soft); border-radius: 999px;
+  font-size: 14px; font-weight: 500; color: var(--ink);
+  transition: border-color .15s ease;
+}
+.city-chip:hover { border-color: var(--ink); }
+.city-chip span { color: var(--muted); font-weight: 400; font-size: 12.5px; }
+</style>
+
+<!-- ============ RELATED CATEGORIES ============ -->
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-head">
+      <div><h2 class="h2" style="font-size: 30px;">Other vendors in Austin</h2></div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;">
+      <a href="#" class="card" style="display: block; overflow: hidden;">
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&q=80&auto=format&fit=crop" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover;" />
+        <div style="padding: 22px 24px;">
+          <h3 class="h4">Videographers in Austin</h3>
+          <p class="muted" style="font-size: 14px; margin: 6px 0 0;">62 vendors · from $2,200</p>
+        </div>
+      </a>
+      <a href="#" class="card" style="display: block; overflow: hidden;">
+        <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=600&q=80&auto=format&fit=crop" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover;" />
+        <div style="padding: 22px 24px;">
+          <h3 class="h4">Makeup artists in Austin</h3>
+          <p class="muted" style="font-size: 14px; margin: 6px 0 0;">44 vendors · from $280</p>
+        </div>
+      </a>
+      <a href="#" class="card" style="display: block; overflow: hidden;">
+        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&q=80&auto=format&fit=crop" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover;" />
+        <div style="padding: 22px 24px;">
+          <h3 class="h4">Florists in Austin</h3>
+          <p class="muted" style="font-size: 14px; margin: 6px 0 0;">81 vendors · from $850</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATEGORY FAQ ============ -->
+<section class="section" style="padding-top: 0;">
+  <div class="container" style="max-width: 880px;">
+    <div class="section-head" style="justify-content: center; text-align: center;">
+      <div style="margin: 0 auto;">
+        <h2 class="h2">Photographer FAQ — Austin</h2>
+      </div>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>How much does a wedding photographer cost in Austin?</summary>
+        <div>Most wedding packages in Austin run $2,800 to $5,200 for 8 hours of coverage. Established studios with two shooters and a same-week sneak peek usually start around $3,400. Hill Country venues add a travel surcharge during peak weekends.</div>
+      </details>
+      <details>
+        <summary>How early should I book?</summary>
+        <div>Saturdays in peak season (Oct–early Nov, Apr–May) book 6 to 9 months in advance. Friday and Sunday dates are typically available 3 to 4 months out, with last-minute openings appearing more often in summer.</div>
+      </details>
+      <details>
+        <summary>Do photographers in Austin offer engagement sessions?</summary>
+        <div>Most do. Engagement sessions are usually offered as an add-on ($400–$900) or bundled into the higher-tier wedding packages. Some include the digital files only; others provide a small printed album as part of the package.</div>
+      </details>
+      <details>
+        <summary>What's the typical turnaround for the final gallery?</summary>
+        <div>4 to 8 weeks is standard, with same-week sneak peeks available from most studios. Higher-volume teams sometimes deliver in 3 weeks; album-led photographers may take up to 10.</div>
+      </details>
+      <details>
+        <summary>Are travel fees normal for Hill Country venues?</summary>
+        <div>Yes. Vendors typically include travel within 30 miles of Austin and charge a flat surcharge ($150–$350) beyond that. Overnight stays are standard for venues more than 90 minutes out.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA + VENDOR + FOOTER ============ -->
+<section class="vband">
+  <div class="container vband-inner">
+    <div>
+      <h3>Are you a photographer in Austin?</h3>
+      <p>List your business and reach the planners booking weddings, birthdays, and corporate events across the Austin metro.</p>
+    </div>
+    <a href="for-vendors.html" class="btn btn-on-dark">List your business →</a>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo" style="color: var(--cream);"><span class="logo-mark"></span>Eventbook</a>
+        <p class="foot-blurb">The workspace and vendor directory for planners of any event.</p>
+      </div>
+      <div><h5>Product</h5><ul><li><a href="vendors.html">Vendors</a></li><li><a href="index.html#features">Features</a></li><li><a href="index.html#pricing">Pricing</a></li><li><a href="#">eveAI</a></li><li><a href="#">Guides</a></li></ul></div>
+      <div><h5>For vendors</h5><ul><li><a href="for-vendors.html">List your business</a></li><li><a href="for-vendors.html#how">How it works</a></li><li><a href="for-vendors.html#faq">Vendor FAQ</a></li></ul></div>
+      <div><h5>Company</h5><ul><li><a href="#">About</a></li><li><a href="#">Blog</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <div class="copy">© 2026 Eventbook, Inc.</div>
+      <a href="for-vendors.html" class="foot-cta"><strong>Are you a vendor?</strong> List your business <span class="arr">→</span></a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
